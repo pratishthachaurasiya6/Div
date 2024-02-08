@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div</title>
+<style>
+    * {
+    margin: 0;
+    padding: 30px;
+    border-radius: 5%;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.white {
+    background: rgb(178, 182, 148);
+}
+
+.blue {
+    background-color: rgb(84, 136, 17);
+}
+
+.all {
+    text-align: center;
+    height: 50vh;
+    width: 400vh;
+}
+
+#div1,
+#div2,
+#div3,
+#div5,
+#div6,
+#div8 {
+    display: flex;
+    border: 3px solid white;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#div4 {
+    width: 50%;
+
+    border: 3px solid rgb(250, 243, 243);
+    height: 100%; 
+    /* kaam nathi krtu */
+}
+
+#div7 {
+    display: flex;
+    flex-direction: row;
+}
+
+#div9,
+#div10 {
+    border: 2px solid rgb(245, 232, 232);
+    width: 50%;
+}
+
+#div5 {
+    width: 50%;
+    border: 3px solid rgb(241, 234, 234);
+    height: 100%;
+}
+
+#div6 {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+}
+
+#div3{
+    flex-direction: row;
+}
+</style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Div</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div class="all">
+            <div class="white" id="div1">
+                <p>row</p>
+                <div class="blue">span12</div>
+            </div>
+            <div class="white" id="div2">
+                <p>row</p>
+                <div id="div3">
+                    <div class="blue" id="div4">span4</div>
+                    <div class="blue" id="div5">
+                        span8
+                        
+                        <div class="white" id="div6">
+                            <p>row</p>
+                            <div id="div7">
+                                <div class="blue" id="div9">span4</div>
+                                <div class="blue" id="div10">span4</div>
+                            </div>
+                        </div>
+                        <div class="white" id="div8">
+                            <p>row</p>
+                            <div class="blue">span8</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+    
+    </html>
+</body>
+</html>
